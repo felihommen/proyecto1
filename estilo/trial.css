@@ -1,0 +1,2036 @@
+@CHARSET "ISO-8859-1";
+/*@font-face {
+  font-family: 'Port Lligat Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Port Lligat Slab'), local('PortLligatSlab-Regular'), url(../font/Port_Lligat_Slab.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}*/
+@font-face {
+  font-family: 'Pangolin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pangolin Regular'), local('Pangolin-Regular'), url(../font/pangolin.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+  html, body{
+background-color: black;      
+background-image: url("../images/cabecera3.jpg");
+margin:0; 
+padding:0;
+//padding-top: 3px;
+height: 100%;
+width: 100%;
+text-align: center;
+//font-family: "Open Sans Condensed", sans-serif;
+
+ }
+
+#contenedor {
+
+  //display: table;
+  display:box; box-orient:horizontal; box-align:stretch;
+  
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  //background-color: #464646;
+  margin: 0 auto;
+  width: 100%; //98%
+  height: 100%; //98%
+  border: 3px solid black;
+  border-radius: 10px;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+
+}
+
+#contenedory{ 
+    overflow: auto;
+    //display: table-row;
+    display:box; box-orient:horizontal; box-align:stretch;
+    vertical-align: middle;
+    padding:0px;
+    margin-left: 5px; /*para centrar*/ 
+    border: 2px solid blue;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%; //90% 590px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+
+#contenedorz{    
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+    height: 100%; //95%; //590px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;    
+}
+/*
+#columnaIzq{
+	  display: table-cell;
+	  padding-top: 5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+          overflow: auto;
+          float:left;
+          border: 2px solid orange;
+	  border-radius: 20px;
+          height: 100%; //565px;
+          //width: 33%; //40
+          margin-left: 5px;
+          margin-top: 0;
+          box-sizing:border-box;
+         -moz-box-sizing:border-box;
+}
+#columnaDer{
+	  display: table-cell;
+	  margin-left: 10px; //para centrar
+	  margin-top: 0; 
+	  padding-top: 5px;
+	  padding-left: 5px; //margen interior
+	  padding-right: 5px; //margen interior
+          float:left;         
+          //width: 66%; //58
+          height: 100%;
+          border: 2px solid orange;
+	  border-radius: 20px;
+          overflow-y: 0;
+          box-sizing:border-box;
+         -moz-box-sizing:border-box;
+}
+#columnaDer2{
+	  display: table-cell;
+	  margin-left: 10px; //para centrar
+	  margin-top: 0px; 
+	  padding-top: 5px;
+	  padding-left: 5px; //margen interior
+	  padding-right: 5px; //margen interior
+          float:left;
+          //width: 66%;
+          border: 2px solid orange;
+	  border-radius: 20px;
+          overflow-y: 0;
+          box-sizing:border-box;
+         -moz-box-sizing:border-box;
+}
+#columnaDer3{
+	  display: table-cell;
+	  margin-left: 10px; //para centrar
+	  margin-top: 0px; 
+	  padding-top: 5px;
+	  padding-left: 5px; //margen interior
+	  padding-right: 5px; //margen interior
+          float:left;
+          //width: 66%;
+          border: 2px solid orange;
+	  border-radius: 20px;
+          overflow-y: 0;
+          box-sizing:border-box;
+         -moz-box-sizing:border-box;
+}
+#columnaDer4{
+	  display: table-cell;
+	  margin-left: 10px; //para centrar
+	  margin-top: 0px; 
+	  padding-top: 5px;
+	  padding-left: 5px; //margen interior
+	  padding-right: 5px; //margen interior
+          float:left;
+          //width: 66%;
+          border: 2px solid orange;
+	  border-radius: 20px;
+          overflow-y: 0;
+          box-sizing:border-box;
+         -moz-box-sizing:border-box;
+}
+#columnaDer5{
+	  display: table-cell;
+	  margin-left: 10px; //para centrar
+	  margin-top: 0px; 
+	  padding-top: 5px;
+	  padding-left: 5px; //margen interior
+	  padding-right: 5px; //margen interior
+          float:left;
+          //width: 66%;
+          border: 2px solid orange;
+	  border-radius: 20px;
+          overflow-y: 0;
+          box-sizing:border-box;
+         -moz-box-sizing:border-box;
+}
+*/
+#reader{
+         
+          border: 4px solid blue;
+	  
+}
+
+#columnaint{
+	  
+	  float:none;
+          height: 160px; //160px;    
+          //overflow-x: scroll;
+}
+#columnaintuser{
+	  
+	  float:none;
+          height: 100%; //160px;    
+          //overflow-x: scroll;
+}
+#columnaintuser2{
+	  
+	  float:none;
+          height: 285px;; //160px;    
+          //overflow-x: scroll;
+          border: 2px solid blue;
+	  border-radius: 20px;
+          overflow-y: 0;
+          box-sizing:border-box;
+         -moz-box-sizing:border-box;
+}
+#columnainttrait{
+	  
+	  float:none;
+          height: 100%; //160px;    
+          //overflow-x: scroll;
+}
+#columnaintbis{
+	  
+	  float:none;
+    height: 175px; //160px;    
+          //overflow-x: scroll;
+}
+#columnaint7{
+	  
+	  float:none;
+          height: 200px;    
+          //overflow-x: scroll;
+}
+#columnaint77{
+	  
+	  float:none;
+          height: 100px;    
+          //overflow-x: scroll;
+}
+#columnaint8{
+	  
+	  float:none;
+          height: 120px;    
+          //overflow-x: scroll;
+}
+#columnaint10{
+	  
+	  padding-top: 10px;
+	  padding-left: 10px;
+	  padding-right: 10px;
+          overflow: auto;      
+          border: 2px solid blue;
+	  border-radius: 20px;
+          margin-left: 5px;
+          margin-top: 7px;
+          height: 420px;
+}
+#columnaintp{
+	  
+	  padding-top: 10px;
+	  padding-left: 10px;
+	  padding-right: 10px;
+          overflow: auto;      
+          border: 2px solid blue;
+	  border-radius: 20px;
+          margin-left: 5px;
+          margin-top: 7px;
+          height: 500px;
+}
+#columnaint0{
+	  text-align:center;
+	  height: 565px;
+	  padding-top: 10px;
+	  padding-left: 10px;
+	  padding-right: 10px;
+          overflow: auto;      
+          border: 2px solid blue;
+	  border-radius: 20px;
+          margin-left: 5px;
+          margin-top: 7px;
+}
+#columnaint6{
+	  padding-top: 5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+          overflow: auto;
+          border: 2px solid orange;
+	  border-radius: 20px;    
+          margin-left: 5px;
+          margin-top: 7px;
+          width: 740px
+}    
+#columnaint2{
+	  
+	  padding-top: 5px;
+	  padding-left: 10px;
+	  padding-right: 10px;
+    overflow: auto;      
+    border: 2px solid blue;
+	  border-radius: 20px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+#columnaint4{
+	  
+	  padding-top: 5px;
+	  padding-left: 10px;
+	  padding-right: 10px;
+    overflow: auto;      
+    border: 2px solid blue;
+	  border-radius: 20px;
+    margin-left: 5px;
+    margin-top: 3px;
+}    
+#columnaint22{
+	  
+	  padding-top: 0px;
+	  padding-left: 10px;
+	  padding-right: 10px;
+    overflow: auto;      
+    border: 2px solid blue;
+	  border-radius: 20px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+#columnaint3{
+	  
+	  float:none;
+          height: 200px;    
+          //overflow: none;
+}
+
+.ex00 {
+color: #333333;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 40pt;
+}
+.ex0A {
+color: #fb0404;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 40pt;
+}
+.ex0B {
+color: #f0ff00;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 40pt;
+}
+.ex0C {
+color: #59c014;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 40pt;
+}
+.ex0D {
+color: #333333;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 20pt;
+}
+.ex0 {
+color: #333333;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 25pt;
+}
+.ex1 {
+  border-collapse: separate; 
+	border-spacing: 5px;
+}
+.ex2 {
+  background: url("../images/pimiento.png") no-repeat center;
+	background-size: 960px 700px; //80px
+}	
+#nuevo_registro
+{
+    background-color: white;
+	  border: 2px solid #0087FF;
+	  font-size: 12pt;
+	  color: grey;
+	  border-radius: 10px;
+}
+
+#nuevo_registro div
+{
+    margin: 5px;
+    background-color: white;
+	  border: 2px solid #0087FF;
+	  font-size: 12pt;
+	  color: grey;
+	  border-radius: 10px;
+}
+.textobarra
+{
+		  font-size: 12pt;
+		  text-align: center;
+		  font-family: "Times New Roman", Times, serif;
+
+}
+.textobarraV
+{
+		  font-size: 14pt;
+		  text-align: center;
+		  font-family: "Times New Roman", Times, serif;
+      color: darkGREEN;
+}
+.textotabla
+{
+		  font-size: 14pt;
+		  /*font-weight: bold;*/
+		  text-align: center;
+		  font-family: "Times New Roman", Times, serif;
+}
+td.textotabla, th.textotabla
+                {
+		  border: 1px solid blue;
+                }
+.textotabla2
+                {
+		  font-size: 14pt;
+		  /*font-weight: bold;*/
+		  text-align: center;
+		  font-family: "Times New Roman", Times, serif;
+                }
+.textotabla2 a
+                {
+		  font-size: 14pt;
+		  /*font-weight: bold;*/
+		  text-align: center;
+		  font-family: "Times New Roman", Times, serif;
+                }
+td.textotabla2, th.textotabla2
+                {
+		  border: 1px solid blue;
+                  min-width: 10px;
+                  max-width: 80px;
+                  width: 80px;
+                }    
+table.textotabla2
+{
+    table-layout: fixed;
+    word-wrap: break-word;
+    word-break:break-all;
+}
+td.textotabla4, th.textotabla4
+                {
+		  border: 1px solid blue;
+                  min-width: 10px;
+                  max-width: 80px;
+                 }    
+table.textotabla4
+{
+    table-layout: fixed;
+    word-wrap: break-word;
+    word-break:break-all;
+}
+
+.pijamaA{
+    background-color: white;
+    font-size: 14pt;		  
+		text-align: center;
+		font-family: "Times New Roman", Times, serif; 
+}
+
+.pijamaB{
+    background-color: lightblue;
+    font-size: 14pt;
+		/*font-weight: bold;*/
+		text-align: center;
+		font-family: "Times New Roman", Times, serif;
+}
+.pijamaC{
+    background-color: #A9F5BC;
+    font-size: 14pt;
+		/*font-weight: bold;*/
+		text-align: center;
+		font-family: "Times New Roman", Times, serif;
+}
+
+
+
+
+.imagen2
+{
+ float:right;	
+}
+.textobarralogout
+{
+		  font-size: 14pt;
+		  text-align: right;
+		  font-family: "Times New Roman", Times, serif;
+}
+.textobarra2
+{
+		  font-size: 14pt;
+		  text-align: right;
+		  font-family: "Times New Roman", Times, serif;
+
+}
+.nuevo_registro table
+{
+    margin: 5px;
+    background-color: white;
+	  border: 5px solid #0087FF;
+	  font-size: 16pt;
+	  color: grey;
+	  border-radius: 30px;
+}
+#listado
+{
+    margin-top: 15px;
+}
+
+#listado img{
+    width: 10%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 0px solid black;
+    text-align: left;
+}
+
+th
+{
+    width: 10%;
+}
+
+thead
+{
+    font-weight: bold;
+}
+
+.filacentrada{
+	font-weight: bold;
+	font-size: medium;
+  text-align: left;
+  vertical-align:middle;
+}
+
+
+.pijama1{
+    background-color: lightgrey;
+     
+}
+
+.pijama2{
+    background-color: blanchedalmond;
+}
+
+.error{
+    color: #ff0000;
+}
+.marco1 {
+	width: 100%;
+	min-height: 40px; //80px
+	max-height: 40px; //80px
+	overflow: hidden;
+	background: url("../images/banner.png") no-repeat ;
+	background-size: auto 40px; //80px
+	margin-bottom: 1px;
+	background-color: #ffffff;
+}
+
+.marco2 {
+	float: left;
+	background: url("../images/cabecera.png") no-repeat 100% 0%;
+	width: 100%;
+	min-height: 300px;
+}
+.marco3 {
+	width: 100%;
+	min-height: 68px;
+	max-height: 68px;
+	overflow: hidden;
+	background: url("../images/banner.png") no-repeat ;
+	background-size: 600px 68px;
+	margin-bottom: 2px;
+	background-color: #BBD7EF;
+}	
+.marco4 {
+	float: left;
+	background: url("../images/cabecera2.png") no-repeat 100% 0%;
+	min-width: 100%;
+	background-color: #BBD7EF;
+}
+.marco5 {
+  background: url("../images/cabecera.png") no-repeat 100% 0%;
+	width: 100%;
+	height: 100%;
+	text-align:center;
+	min-height: 400px;
+}
+.contenidomarco2 {
+	font-size: small;
+	font-style: normal;
+	color: #000;
+	text-decoration: none;
+	float: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 60px;
+	margin-left: 80px;
+}
+.contenidomarco4 {
+	
+	font-style: normal;
+	color: #000;
+	float: left;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.contenidomarco5 {
+	
+	font-style: normal;
+	color: #000;
+	float: right;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.usuariointroducido {
+		float:right;
+		width: 20%;
+	}
+
+a:link {
+	text-decoration: none;
+	color: #0087FF;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #0087FF;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #0087FF;
+}
+
+a:active {
+	text-decoration: underline;
+	color: #0087FF;
+}
+
+.enlace {
+	text-decoration: none;
+	cursor: pointer;
+	color: #0087FF;
+}
+
+
+.tab {
+	float: left;
+	min-width: 50px;
+	min-height: 1px;
+}
+
+.cabecera {
+	width: 100%;
+	min-height: 68px;
+	max-height: 68px;
+	overflow: hidden;
+	background: url(http://www.juntadeandalucia.es/educacion/gestionafp/es/logo_FPD.jpg) no-repeat ;
+	background-size: 600px 68px;
+	margin-bottom: 2px;
+	background-color: #BBD7EF;
+}
+
+.login {
+	/*background-color: #F7D358;*/
+	font-size: small;
+	font-style: normal;
+	color: #000;
+	text-decoration: none;
+/*	float: left; */
+        float: right;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 0px;
+	margin-left: 660px;
+	border-left-style: solid;
+	border-left-color: #0F5CA9;
+	border-left-width: 2px;
+	min-height: 40px;
+	max-height: 40px;
+}
+
+.usuario {
+	font-weight: bold;
+	font-size: small; //medium;
+}
+.usuarioazul {
+	font-weight: bold;
+	font-size: medium;
+	color: blue;
+}
+.usuarioverde {
+	font-weight: bold;
+	font-size: medium;
+	color: greenyellow;
+}
+.usuarioverdeoscuro {
+	font-weight: bold;
+	font-size: medium;
+	color: lightgreen;
+}
+.tituloSeccion {
+	font-weight: bold;
+	font-size: large;
+	color: #0F5CA9;
+}
+
+.tituloPlano {
+	float: left;
+	width: 100%;
+	border-bottom-style: solid;
+	border-bottom-color: #0087FF;
+	border-bottom-width: 2px;
+	font-size: large;
+	font-style: italic;
+	text-decoration: none;
+	color: #0087FF;
+	padding-top: 10px;
+}
+
+.persona {
+	color: #0087FF;
+}
+
+.boton {
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.menu {
+	float: left;
+	width: 20%;
+	text-align: left;
+	font-weight: bold;
+}
+
+.portada {
+	float: left;
+	background: url("http://www.juntadeandalucia.es/educacion/gestionafp/imagenes/imgportada_fpd.jpg") no-repeat 100% 0%;
+	width: 100%;
+	min-height: 300px;
+}
+
+.contenidoPortada {
+	font-size: small;
+	font-style: normal;
+	color: #000;
+	text-decoration: none;
+	float: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 60px;
+	margin-left: 80px;
+}
+
+.cuerpo {
+	float: left;
+	border-left-style: solid;
+	border-left-color: #BBD7EF;
+	border-left-width: 2px;
+	padding-left: 2px;
+	margin-bottom: 2px;
+}
+
+.cuerpoCompleto {
+	float: left;
+	border-left-style: solid;
+	border-left-color: #BBD7EF;
+	border-left-width: 2px;
+	padding-left: 2px;
+	margin-bottom: 2px;
+	width: 99%;
+}
+
+.cuerpoSCORM {
+	float: left;
+	border-left-style: solid;
+	border-left-color: #0F5CA9;
+	border-left-width: 2px;
+	padding-left: 2px;
+	margin-bottom: 2px;
+	max-width: 79%;
+}
+
+.centrar {
+	margin: 0 auto 0 auto;
+	width: 400px;
+	min-height: 600px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.dosColumnas {
+	overflow: hidden;
+}
+
+.lista {
+	float: left;
+	border-left-style: solid;
+	border-left-color: #BBD7EF;
+	border-left-width: 2px;
+	padding-left: 2px;
+	margin-bottom: 2px;
+}
+
+.listaScrollUsuarios {
+	float: left;
+	padding-left: 2px;
+	margin-bottom: 2px;
+	height: 400px;
+	width: 99%;
+	display: block;
+	overflow: auto;
+	display: block;
+}
+
+.listaScrollRoles {
+	float: left;
+	border-left-style: solid;
+	border-left-color: #BBD7EF;
+	border-left-width: 2px;
+	padding-left: 2px;
+	margin-bottom: 2px;
+	max-height: 150px;
+	min-width: 340px;
+	display: block;
+	overflow: auto;
+	display: block;
+}
+
+.listaScrollConfig {
+	float: left;
+	padding-left: 2px;
+	margin-bottom: 2px;
+	max-height: 300px;
+	min-width: 900px;
+	max-width: 900px;
+	display: block;
+	overflow: auto;
+	display: block;
+}
+
+.listaAsignaciones {
+	float: left;
+	border-left-style: solid;
+	border-left-color: #BBD7EF;
+	border-left-width: 2px;
+	padding-left: 2px;
+	margin-bottom: 2px;
+	max-width: 500px;
+}
+
+.listaScrollAsignaciones {
+	float: left;
+	border-left-style: solid;
+	border-left-color: #BBD7EF;
+	border-left-width: 2px;
+	padding-left: 2px;
+	margin-bottom: 2px;
+	max-height: 300px;
+	min-width: 357px;
+	max-width: 357px;
+	display: block;
+	overflow: auto;
+	display: block;
+}
+
+.elementoLista {
+	background: url("../images/list.gif") no-repeat left center;
+	background-color:none;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #BBD7EF;
+	margin-left: 2px;
+	margin-bottom: 2px;
+	padding-left: 20px;
+	padding-right: 4px;
+	font-size: large;
+}
+
+.listaCompleta {
+	float: left;
+	padding-left: 2px;
+	margin-bottom: 2px;
+	width: 99%;
+}
+
+.elementoListaCompleto {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #BBD7EF;
+	margin-left: 2px;
+	margin-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size: large;
+	color: #0087FF;;
+	width: 99%;
+}
+
+.selecciones {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #BBD7EF;
+	text-align: left;
+	padding-left: 25px;
+}
+
+.notificacion {
+	border: 1px dashed;
+	border-color: #7CA3D3;
+	width: 100%;
+	min-height: 15px;
+	background-color: #E5F1FA;
+	text-align: center;
+}
+
+.titulopeque {
+	font-size: 8pt;
+	text-align: center;
+}
+.tituloM {
+	font-size: 12pt;
+	text-align: center;
+	padding-right: 2px;
+}
+.tituloM2 {
+	font-size: 11pt;
+	text-align: center;
+	padding-right: 2px;
+}
+.campotransparente{
+	background:transparent;
+        border: 0px; 
+	font-size: 12pt;
+	font-weight: bold;
+	text-align: center;
+	color: RED; /*color texto negro */ 	
+}
+.cuentaplots{
+	background:transparent;
+        border: 0px; 
+	font-size: 10pt;
+	font-weight: bold;
+	text-align: right;
+	color: orange; 	
+}
+.cuentaplotsG{
+	background:transparent;
+        border: 0px; 
+	font-size: 14pt;
+	font-weight: bold;
+	text-align: CENTER;
+	color: RED; 	
+}
+.cuentaplots2G{
+	background:transparent;
+        border: 0px; 
+	font-size: 14pt;
+	font-weight: bold;
+	text-align: CENTER;
+	color: BLUE; 	
+}
+.cuentaplots3G{
+	background:transparent;
+        border: 0px; 
+	font-size: 16pt;
+	font-weight: bold;
+	text-align: CENTER;
+	color: BLACK; 	
+}
+.campo {
+	background-color: #F7D358; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 8pt;
+	text-align: center;
+	color: #000000; /*color texto negro */ 
+	border-radius: 10px;
+}
+.campoG {
+	background-color: #F7D358; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 14pt;
+	text-align: center;
+	color: #000000; /*color texto negro */ 
+	border-radius: 10px;
+        
+}
+.campoGV {
+	background-color: lightGREEN; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 14pt;
+	text-align: center;
+	color: #000000; /*color texto negro */ 
+	border-radius: 10px;
+}
+.campograndeGV {
+	background-color: lightGREEN; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 16pt;
+	text-align: center;
+	color: #000000; /*color texto negro */ 
+	border-radius: 10px;
+}
+.campoM {
+	background-color: #F7D358; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 12pt;
+	text-align: center;
+	color: #000000; /*color texto negro */ 
+	border-radius: 10px;
+}
+.campoMV {
+	background-color: lightgreen;
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 12pt;
+	text-align: center;
+	color: #000000; /*color texto negro */ 
+	border-radius: 10px;
+}
+.campogrande {
+	background-color: #F7D358; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 16pt;
+	text-align: center;
+	color: #000000; /*color texto negro */ 
+	border-radius: 10px;
+}
+.campograndeV {
+	background-color: lightgreen;
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 16pt;
+	text-align: center;
+	color: #000000; /*color texto negro */ 
+	border-radius: 10px;
+}
+.campoceleste {
+	background-color: #81DAF5; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 8pt;
+	text-align: center;
+	color: #000000; /*color texto negro */ 
+	border-radius: 10px;
+}
+.campocelestegrande {
+	background-color: #81DAF5; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 16pt;
+	text-align: center;
+	color: #000000; /*color texto negro */ 
+	border-radius: 10px;
+}
+.camporosa2 {
+	background-color: #F5A9F2; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 8pt;
+	text-align: left;
+	color: #000000; /*color texto negro */ 
+	border-radius: 10px;
+}
+
+.camporosaM {
+	background-color: #F5A9F2; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 12pt;
+	text-align: center;
+	color: #000000; /*color texto negro */ 
+	border-radius: 10px;
+}
+.camporojo {
+	background-color: #F7D358; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 10pt;
+	text-align: center;
+	color: #FF0000; /*color texto rojo */ 
+	border-radius: 10px;
+}
+.camporojoG {
+	background-color: #F7D358; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 16pt;
+	text-align: center;
+	color: #FF0000; /*color texto rojo */ 
+	border-radius: 10px;
+}
+.camporojoGV {
+	background-color: lightgreen; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 16pt;
+	text-align: center;
+	color: #FF0000; /*color texto rojo */ 
+	border-radius: 10px;
+}
+.campoazul {
+	background-color: #F7D358; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 10pt;
+	text-align: center;
+	color: #0000FF; /*color texto azul */ 
+	border-radius: 10px;
+}
+.campoazulG {
+	background-color: #F7D358; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 14pt;
+	text-align: center;
+	color: #0000FF; /*color texto azul */ 
+	border-radius: 10px;
+}
+.campoazulGV {
+	background-color: lightgreen; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 14pt;
+	text-align: center;
+	color: #0000FF; /*color texto azul */ 
+	border-radius: 10px;
+}
+.campoLogin {
+	background-color: #F7D358; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 14pt;
+	text-align: center;
+	color: #000000; /*color texto negro */ 
+	border-radius: 10px;
+}
+.campoLoginG {
+	background-color: #F7D358; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 22pt;
+	text-align: center;
+	color: #000000; /*color texto negro */ 
+	border-radius: 12px;
+}
+.campo_seleccionado{
+background-color: #eeeeee; font-weight:bold; color:#000000;
+}
+.campo_izquierda { 
+	background-color: #F7D358; 
+	border: 2px solid #0087FF; 
+	font-size: 12pt; 
+	text-align: left; 
+	color: #000000; 
+	border-radius: 10px; 
+	}
+.campo_izquierdapeque { 
+	background-color: #F7D358; 
+	border: 2px solid #0087FF; 
+	font-size: 10pt; 
+	text-align: CENTER; 
+	color: #000000; 
+	border-radius: 10px; 
+	}
+.campo_izquierdapeque2 { 
+	background-color: #F7D358; 
+	border: 2px solid #0087FF; 
+	font-size: 10pt; 
+	text-align: left; 
+	color: #000000; 
+	border-radius: 10px; 
+	}
+.campo_izquierdapequeV { 
+	background-color: lightgreen; 
+	border: 2px solid #0087FF; 
+	font-size: 10pt; 
+	text-align: CENTER; 
+	color: #000000; 
+	border-radius: 10px; 
+	}
+.campo_izquierdapequeV2 { 
+	background-color: lightgreen; 
+	border: 2px solid #0087FF; 
+	font-size: 10pt; 
+	text-align: left; 
+	color: #000000; 
+	border-radius: 10px; 
+	}
+.campo_izquierdagrande { 
+	background-color: #F7D358; 
+	border: 2px solid #0087FF; 
+	font-size: 12pt; 
+	text-align: CENTER; 
+	color: #000000; 
+	border-radius: 10px; 
+	}
+.campo_izquierdagrandeV { 
+	background-color: lightgreen; 
+	border: 2px solid #0087FF; 
+	font-size: 12pt; 
+	text-align: CENTER; 
+	color: #000000; 
+	border-radius: 10px; 
+	}
+.campo_izquierdagrandeGV {
+	background-color: lightGREEN; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 12pt;
+	text-align: center;
+	color: #000000; /*color texto negro */ 
+	border-radius: 10px;
+}
+.label_izquierda {
+	font-weight: bold; 
+	font-size: 14pt; 
+	color: grey; 
+	text-align: right; 
+	}
+.label_izquierdaG {
+	font-weight: bold; 
+	font-size: 22pt; 
+	color: grey; 
+	text-align: right; 
+	}
+.vistaAlumno { 
+	text-align: right; 
+	font-size: medium; 
+	font-style: italic; 
+	text-decoration: none; 
+	color: #0087FF; 
+	font-family: arial; 
+	color: #0087FF; 
+	}
+
+.pie {
+	overflow: hidden;
+	font-size: x-large;
+	font-style: normal;
+	text-decoration: none;
+	background-color: #BBD7EF;
+	color: #9CDFFE;
+	width: 100%;
+	height: 10px;
+}
+
+.barra {
+	overflow: hidden;
+	font-size: x-large;
+	font-style: italic;
+	text-decoration: none;
+	margin-bottom: 2px;
+	background-color: #BBD7EF;
+	color: #0F5CA9;
+	padding-left: 5px;
+	font-family: arial;
+	font-weight: bold;
+}
+
+.barra a:link {
+	text-decoration: none;
+	font-size: normal;
+	font-style: italic;
+	text-decoration: none;
+	color: #000000;
+	font-family: arial;
+	font-weight: normal;
+}
+
+.barra a:visited {
+	text-decoration: none;
+	
+}
+
+.barra a:hover {
+	text-decoration: none;
+	
+}
+
+.barra a:active {
+	text-decoration: none;
+	
+}
+
+@font-face {
+	font-family: jenna;
+	src: url('../estilo/JennaSue.ttf');
+}
+
+.blanco {
+	color: white;
+	font-family: jenna;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.titulo {
+	overflow: hidden;
+	font-size: x-large;
+	text-decoration: none;
+	margin-bottom: 2px;
+	color: #00710F;
+	padding-left: 5px;
+	font-family: arial;
+	font-weight: bold;
+}
+.titulo2 p{
+	overflow: hidden;
+	font-size: x-large;
+	text-decoration: none;
+	margin-bottom: 2px;
+	color: red;
+	padding-left: 5px;
+	font-family: arial;
+	font-weight: bold;
+}
+.tarea {
+	overflow: hidden;
+	font-size: large;
+	font-style: italic;
+	text-decoration: none;
+	color: #0087FF;
+	font-family: arial;
+	font-weight: bold;
+	color: #0087FF;
+	padding-left: 5px;
+}
+
+.enunciado {
+	border: 1px dashed;
+	border-color: #7CA3D3;
+	min-width: 500px;
+	max-width: 99%;
+	overflow: auto;
+}
+
+div.foto {
+	width: 80%;
+	padding: 1em;
+}
+
+div.foto:HOVER {
+	width: 90%;
+}
+
+div.foto img,div.foto span {
+	width: 83%;
+}
+
+div.foto {
+	position: relative;
+}
+
+div.foto span {
+	position: absolute;
+	left: 0;
+	bottom: -.5em;
+	text-align: center;
+}
+
+.ayuda {
+	font-size: 12pt;
+	color: grey;
+}
+
+.rotacion {
+	font-size: x-large;
+	font-style: italic;
+	text-decoration: none;
+	color: #0087FF;
+	-moz-transform: rotate(-90.0deg); /* FF3.5+ */
+	-o-transform: rotate(-90.0deg); /* Opera 10.5 */
+	-webkit-transform: rotate(-90.0deg); /* Saf3.1+, Chrome */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+	/* IE6,IE7 */
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+	-moz-transform: rotate(-90.0deg);
+	/* IE8 */
+}
+
+.formulario {
+	text-align: right;
+}
+
+form {
+	text-align: right;
+}
+
+form label {
+	display: inline-block;
+}
+
+form input {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.boton_0 {
+	overflow: hidden;
+	cursor: pointer;
+	font-size: small;
+	font-style: normal;
+	text-decoration: underline;
+	color: #095DA9;
+	font-size: small;
+}
+
+.boton_0:hover {
+	color: #7CA3D3;
+}
+
+.boton_1 {
+	overflow: hidden;
+	cursor: pointer;
+	font-size: small;
+	font-style: normal;
+	text-decoration: none;
+	color: #095DA9;
+}
+
+.boton_1:hover {
+	color: #7CA3D3;
+}
+
+.boton_2 {
+	overflow: hidden;
+	cursor: pointer;
+	font-size: small;
+	font-style: oblique;
+	text-decoration: none;
+	color: #095DA9;
+	padding-left: 10px;
+}
+
+.boton_2:hover {
+	color: #7CA3D3;
+}
+
+.boton_3 {
+	overflow: hidden;
+	cursor: pointer;
+	font-size: small;
+	font-style: oblique;
+	text-decoration: none;
+	color: #095DA9;
+	padding-left: 20px;
+}
+
+.boton_3:hover {
+	color: #7CA3D3;
+}
+
+.boton_4 {
+	overflow: hidden;
+	cursor: pointer;
+	font-size: small;
+	font-style: oblique;
+	text-decoration: none;
+	color: #095DA9;
+	padding-left: 30px;
+}
+
+.boton_4:hover {
+	color: #7CA3D3;
+}
+/*Tablas*/
+table {
+    font-family: helvetica;
+    font-size: 1em;
+}
+table[align="center"] {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.tabla {
+	margin:auto;
+	position:relative;
+}
+
+.tabla table, .tabla th, .tabla td {
+	border: 0.1em solid #D4E0EE;
+	border-collapse: collapse;
+	font-family: helvetica, Arial, sans-serif;
+	color: #555555;
+	font-size: 90%;
+}
+
+.tabla caption {
+	font-size: 100%;
+	font-weight: bold;
+	margin: 0.5em;
+}
+
+.tabla td, .tabla th {
+	padding: 0.5em;
+}
+
+.tabla thead th {
+	text-align: left;
+	background: #C3DCF7;
+	color: #153152;
+	font-size: 100% !important;
+}
+
+
+.tabla tbody th {
+	font-weight: bold;
+	color: #153152;
+	background: #C3DCF7;
+	text-align: left;
+
+}
+
+.tabla tbody tr { background: #FCFDFE; }
+
+.tabla td p, .tabla th p { margin-bottom: 0; }
+
+/*.tabla tbody tr:odd { background: #F7F9FC; }*/
+
+.tabla tbody tr:hover,
+.tabla tfoot tr:hover {
+    background-color:#E3ECF7;
+    color:#153152;
+}
+
+.tabla tfoot th {
+	font-weight: bold;
+	color: #153152;
+	background: #C3DCF7;
+	text-align: center;
+    font-size: 80%;
+}
+
+.tabla tfoot td {
+	font-weight: bold;
+    font-size: 80%;
+}
+
+
+/*descripcion*/
+.descripcion {
+	text-decoration: underline
+	outline: none;
+	cursor: help; text-decoration: none;
+    color: #0087FF;
+    text-decoration: none;
+    border: 0;
+
+}
+a.glosario:hover { text-decoration:none; }
+.descripcion span {
+	margin-left: 0;
+	position: absolute;
+	color: #000000;
+	background: #9FDAEE; border: 1px solid #2BB0D7;
+	text-align: justify;
+	background-repeat: no-repeat;
+	background-position: 1em 1em; 
+	display: none;
+}
+.descripcion:hover span {
+	border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; 
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+	z-index: 99;
+	display: block;
+	float: right;
+	margin-right: 10%;
+	margin-top: -0.2em;
+	position: relative;
+	width: 40%;
+	text-decoration: none;
+	font-weight:normal;
+	font-family: Arial;
+	font-size: 80%;
+	font-style:italic;
+}
+.descripcion:hover em {
+	font-size: 1.2em; font-weight: bold;
+	display: block; 
+	padding: 1em 0 0.6em 0;
+	margin-left: 3em;
+}
+a.descripcion span { padding: 0.5em 1em 0.8em 1em; z-index:999; display: block;}
+* html a:hover { background: transparent;}
+
+.nuevoregistrotable
+{
+	  overflow: hidden;
+		margin: 4px;
+	  text-align: right;
+	  font-style: bold;
+    font-size: 12pt;
+    color: #000000;
+    border: 1px grey;
+	  border-radius: 20px;    
+}
+.nuevoregistrotable2
+{
+    margin: 0 auto;
+    border-collapse: collapse;
+	  border: 0px solid black;
+    text-align: left;
+    font-size: 10pt;
+}
+.nuevoregistrotable2 th
+{
+/*    width: 5%;*/
+}
+.nuevoregistrotable2 thead
+{
+    font-weight: bold;
+}
+
+.fila_der{
+  text-align: right;
+  font-size: 10pt;
+  font-style: bold;
+}
+.fila_derG{
+  text-align: right;
+  font-size: 12pt;
+  font-style: bold;
+}
+.fila_izqG{
+  font-size: 12pt;
+  font-style: bold;
+}
+.centradagrande{
+  text-align: center;
+  font-size: 14pt;
+  font-style: bold;
+  padding-right: 20px;  
+}
+#portapdf {
+    border: 1px solid #484848;
+    margin: 0 auto;
+}
+#results{
+    padding:5px;
+    overflow: hidden;   
+    float:left;
+}
+#my_camera{
+    padding:5px;
+    overflow: hidden;   
+    float:left;
+}
+
+#mycamera{
+	  margin-left: 0px;
+	  margin-right: 0px;
+}
+#myboton{
+	  margin-left: 0px;
+	  margin-right: 10px;
+}
+#co
+.textcolumnaint{
+text-align: left;
+font-size: 8pt;
+}
+#columnapdf{
+position: absolute;
+top: 15%; /* Buscamos el centro horizontal (relativo) del navegador */
+left: 40%; /* Buscamos el centro vertical (relativo) del navegador */
+//width: 600px; /* Definimos el ancho del objeto a centrar */
+//height: 400px; /* Definimos el alto del objeto a centrar */
+//margin-top: -200px; /* Restamos la mitad de la altura del objeto con un margin-top */
+//margin-left: -300px; /* Restamos la mitad de la anchura del objeto con un margin-left */
+}
+#anexadoc{
+position: absolute;
+top: 15%; /* Buscamos el centro horizontal (relativo) del navegador */
+left: 40%; /* Buscamos el centro vertical (relativo) del navegador */
+background-color: #BBD7EF;
+/*width: 600px; /* Definimos el ancho del objeto a centrar */
+/*height: 400px; /* Definimos el alto del objeto a centrar */
+/*margin-top: -200px; /* Restamos la mitad de la altura del objeto con un margin-top */
+/*margin-left: -300px; /* Restamos la mitad de la anchura del objeto con un margin-left */
+}
+.fondo{
+background: url("../images/cabecera2.png") no-repeat 100% 0%;
+}
+.barra {
+  display: table-row;
+  width: 100%;
+}
+.barra2 {
+  overflow: hide;	
+	font-size: x-large;
+	font-style: italic;
+	text-decoration: none;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	vertical-align: middle;
+	background-color: #BBD7EF;
+	color: #0F5CA9;
+	padding-left: 5px;
+	font-family: arial;
+	font-weight: normal;
+  border: 1px solid blue;
+	border-radius: 5px;
+}
+.barra2 a:link {
+	text-decoration: none;
+	color: blue;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.barra2 a:visited {
+	text-decoration: none;
+	color: blue;
+		font-weight: normal;
+		font-style: normal;
+}
+
+.barra2 a:hover {
+  font-weight: bold;
+	text-decoration: underline;
+	color: orange;
+	font-style: italic;
+}
+
+.barra2 a:active {
+	text-decoration: underline;
+	color: orange;
+	font-style: italic;
+}
+.barra2 img {
+ vertical-align: middle;
+}
+.barra3 {
+	display: table-cell;
+	overflow: hide;
+	float: left;
+	
+	font-size: x-large;
+	font-style: italic;
+	text-decoration: none;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	vertical-align: middle;
+  background-color: #FFFFFF;
+	color: #0F5CA9;
+	padding-left: 5px;
+	font-family: arial;
+	font-weight: normal;
+  border: 1px solid blue;
+	border-radius: 5px;
+}
+.barra3 a:link {
+	text-decoration: none;
+	color: blue;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.barra3 a:visited {
+	text-decoration: none;
+	color: blue;
+		font-weight: normal;
+		font-style: normal;
+}
+
+.barra3 a:hover {
+  font-weight: bold;
+	text-decoration: underline;
+	color: orange;
+	font-style: italic;
+}
+
+.barra3 a:active {
+	text-decoration: underline;
+	color: orange;
+	font-style: italic;
+}
+.barra3 img {
+ vertical-align: middle;
+}
+
+.barra4 {
+	
+	overflow: hide;
+	
+	font-size: x-large;
+	font-style: italic;
+	text-decoration: none;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	vertical-align: middle;
+	background-color: #BBD7EF;
+	color: #0F5CA9;
+	padding-left: 5px;
+	font-family: arial;
+	font-weight: normal;
+  border: 1px solid blue;
+	border-radius: 5px;
+}
+.barra4 a:link {
+	text-decoration: none;
+	color: blue;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.barra4 a:visited {
+	text-decoration: none;
+	color: blue;
+		font-weight: normal;
+		font-style: normal;
+}
+
+.barra4 a:hover {
+  font-weight: bold;
+	text-decoration: underline;
+	color: orange;
+	font-style: italic;
+}
+
+.barra4 a:active {
+	text-decoration: underline;
+	color: orange;
+	font-style: italic;
+}
+.barra4 img {
+ vertical-align: middle;
+}
+#adapto{
+	position:absolute; 
+	z-index:1; 
+	width:100%; 
+	height:100%;
+}
+#contenido100{
+height: 100%; 
+background: url("../images/cabecera3.jpg")no-repeat fixed center; 
+min-height: 550px;
+overflow auto;
+}
+.logcentrado {
+display: table-cell;
+vertical-align: middle;
+margin: 0 auto;
+padding: 0 10px;
+}
+
+<!--
+/* Terence Ordona, portal[AT]imaputz[DOT]com         */
+/* http://creativecommons.org/licenses/by-sa/2.0/    */
+
+/* begin some basic styling here                     */
+/*body {
+	background: #FFF;
+	color: #000;
+	font: normal normal 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin: 10px;
+	padding: 0
+}
+*/
+.scrollTable table, td, a {
+	color: #000;
+	font: normal normal 12px Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+
+/* end basic styling                                 */
+
+/* define height and width of scrollable area. Add 16px to width for scrollbar          */
+div.tableContainer {
+	clear: both;
+	border: 1px solid #963;
+	height: 285px;
+	overflow: auto;
+	width: 756px
+}
+
+/* Reset overflow value to hidden for all non-IE browsers. */
+html>body div.tableContainer {
+	overflow: hidden;
+	width: 756px
+}
+
+/* define width of table. IE browsers only                 */
+div.tableContainer table {
+	float: left;
+	width: 740px
+}
+
+/* define width of table. Add 16px to width for scrollbar.           */
+/* All other non-IE browsers.                                        */
+html>body div.tableContainer table {
+	width: 756px
+}
+
+/* set table header to a fixed position. WinIE 6.x only                                       */
+/* In WinIE 6.x, any element with a position property set to relative and is a child of       */
+/* an element that has an overflow property set, the relative value translates into fixed.    */
+/* Ex: parent element DIV with a class of tableContainer has an overflow property set to auto */
+thead.fixedHeader tr {
+	position: relative
+}
+
+/* set THEAD element to have block level attributes. All other non-IE browsers            */
+/* this enables overflow to work on TBODY element. All other non-IE, non-Mozilla browsers */
+html>body thead.fixedHeader tr {
+	display: block
+}
+
+/* make the TH elements pretty */
+}
+thead.fixedHeader th {
+	background: #FF9933;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-top: 1px solid #fff;
+	font-weight: normal;
+	padding: 4px 3px;
+	text-align: left;
+}
+.fixedHeader th {
+	/*background: #FFFFDD;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-top: 1px solid #fff;*/
+	font-weight: normal;
+	padding: 4px 3px;
+	text-align: left;
+	font-weight: bold;
+	font-size: normal;
+	//color: blue;
+}
+.fixedHeader caption {
+	background: #FF9933;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-top: 1px solid #fff;
+	font-weight: normal;
+	padding: 4px 3px;
+	text-align: left;
+	text-color: blue;
+}
+/* make the A elements pretty. makes for nice clickable headers                */
+thead.fixedHeader a, thead.fixedHeader a:link, thead.fixedHeader a:visited {
+	//color: #FFF; 
+	display: block;
+	text-decoration: none;
+	width: 100%
+}
+
+/* make the A elements pretty. makes for nice clickable headers                */
+/* WARNING: swapping the background on hover may cause problems in WinIE 6.x   */
+/*thead.fixedHeader a:hover {
+	color: #FFF;
+	display: block;
+	text-decoration: underline;
+	width: 100%
+}*/
+
+/* define the table content to be scrollable                                              */
+/* set TBODY element to have block level attributes. All other non-IE browsers            */
+/* this enables overflow to work on TBODY element. All other non-IE, non-Mozilla browsers */
+/* induced side effect is that child TDs no longer accept width: auto                     */
+html>body tbody.scrollContent {
+	display: block;
+	height: 350px;
+	overflow: auto;
+	width: 100%
+}
+
+/* make TD elements pretty. Provide alternating classes for striping the table */
+/* http://www.alistapart.com/articles/zebratables/                             */
+tbody.scrollContent td, tbody.scrollContent tr.pijama1 td {
+	//background: lightgrey;
+	background: #DDDDFF;//azul pastel
+	border-bottom: none;
+	border-left: none;
+	border-right: 1px solid #CCC;
+	border-top: 1px solid #DDD;
+	padding: 2px 3px 3px 4px
+	}
+
+tbody.scrollContent tr.pijama2 td {
+	background: blanchedalmond;
+	//background: #FFF2D2; naranja pastel //FFFFDD blanco	
+	border-bottom: none;
+	border-left: none;
+	border-right: 1px solid #CCC;
+	border-top: 1px solid #DDD;
+	padding: 2px 3px 3px 4px
+}
+
+/* define width of TH elements: 1st, 2nd, and 3rd respectively.          */
+/* Add 16px to last TH for scrollbar padding. All other non-IE browsers. */
+/* http://www.w3.org/TR/REC-CSS2/selector.html#adjacent-selectors        */
+
+.selector {
+  opacity: 0.5;
+  filter:  alpha(opacity=50);
+
+}
+/*
+html>body thead.fixedHeader th {
+	width: 140px 
+}
+
+html>body thead.fixedHeader th + th {
+	width: 137px
+}
+
+html>body thead.fixedHeader th + th + th {
+	width: 240px 
+}
+
+html>body thead.fixedHeader th + th + th + th {
+	width: 40px
+}
+html>body thead.fixedHeader th + th + th + th + th{
+	width: 100px
+}
+
+html>body tbody.scrollContent td {
+	width: 80px 
+}
+
+html>body tbody.scrollContent td + td {
+	width: 60px 
+}
+
+html>body tbody.scrollContent td + td + td {
+	width: 280px
+}
+html>body tbody.scrollContent td + td + td + th {
+	width: 40px
+}
+html>body tbody.scrollContent td + td + td + th + th{
+	width: 100px
+}
+*/
+.loader {
+display:none;
+float: right;
+}
+.ok {
+display:none;
+float: right;
+}
+.separa{
+        padding-left: 2px;
+        border-left-style: solid;
+	border-left-color: #0F5CA9;
+	border-left-width: 2px;
+        padding-right: 20px;
+        text-align: left
+}

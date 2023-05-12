@@ -1,0 +1,75 @@
+* {
+margin:0;
+padding:0;
+}
+
+body {
+background:#FFFFFF;
+font: bold 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+margin:0px;
+padding:0px;
+}
+
+h1 {
+font-size:16px;
+}
+
+h4 {
+font-size:12px;
+}
+
+a{
+color:#348;
+text-decoration:none;
+outline:none;
+}
+
+a:hover{
+color:#67a;
+}
+
+.caption {
+font-style:italic;
+color:#887;
+}
+
+.container_galeria {
+text-align:center;
+width:25%;
+float:left;
+height:auto;
+}
+
+.estilo_galeria{
+width:100%;
+height:auto;
+}
+
+.estilo_galeria li{
+width:68px !important;
+height:50px !important;
+border:3px double #111;
+margin: 0 2px;
+}
+
+.estilo_galeria li div .caption{
+font:italic 0.7em/1.4 georgia,serif;
+}
+
+#cuadro_imagen{
+float:left;
+width:65%;
+text-align:center;
+}
+
+#cuadro_imagen img{
+margin:0px auto 10px auto;
+}
+
+.nav{
+padding-top:15px;
+clear:both;
+font:80% 'helvetica neue',sans-serif;
+letter-spacing:3px;
+text-transform:uppercase;
+}

@@ -1,0 +1,12 @@
+    main {
+        background-color: mintcream;
+    }
+
+    #fondo {
+        width: 100vw;
+        opacity: 0.15;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }

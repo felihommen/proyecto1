@@ -1,0 +1,74 @@
+body {
+            background: url(../img/logo_needsport.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 500px;
+            margin: 0;
+        }
+        .div-sport {
+            width: 40%;
+            height: 250px;
+            background: rgba(0, 0, 0, .6);
+            box-shadow: 5px 4px 43px #000;
+            position: absolute;
+            top: 80px;
+            left: 30%;
+            border-radius: 10px 10px 10px 10px;
+            margin-top: 60px;
+        }
+        .div-empresa {
+            width: 40%;
+            height: 500px;
+            background: rgba(0, 0, 0, .6);
+            box-shadow: 5px 4px 43px #000;
+            position: absolute;
+            top: 30px;
+            left: 30%;
+            border-radius: 10px 10px 10px 10px;
+            margin-top: 60px;
+        }
+        .div-emple {
+            width: 40%;
+            height: 380px;
+            background: rgba(0, 0, 0, .6);
+            box-shadow: 5px 4px 43px #000;
+            position: absolute;
+            top: 50px;
+            left: 30%;
+            border-radius: 10px 10px 10px 10px;
+            margin-top: 60px;
+        }
+        .div-str {
+            width: 50%;
+            height: 420px;
+            background: rgba(0, 0, 0, .6);
+            box-shadow: 5px 4px 43px #000;
+            position: absolute;
+            top: 80px;
+            left: 30%;
+            border-radius: 10px 10px 10px 10px;
+            margin-top: 20px;
+        }
+        .div-need {
+            width: 40%;
+            height: 380px;
+            background: rgba(0, 0, 0, .6);
+            box-shadow: 5px 4px 43px #000;
+            position: absolute;
+            top: 80px;
+            left: 30%;
+            border-radius: 10px 10px 10px 10px;
+            margin-top: 60px;
+        }
+
+        .div-activity {
+            width: 40%;
+            height: 500px;
+            background: rgba(0, 0, 0, .6);
+            box-shadow: 5px 4px 43px #000;
+            position: absolute;
+            top: 30px;
+            left: 30%;
+            border-radius: 10px 10px 10px 10px;
+            margin-top: 50px;
+        }

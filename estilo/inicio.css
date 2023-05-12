@@ -1,0 +1,123 @@
+html, body{
+margin:0; 
+padding:0;
+padding-top: 3px;
+height: 98%;
+width: 100%;
+text-align: center;
+font-family: "Open Sans Condensed", sans-serif;
+}
+
+#contenedor {
+  display: table;
+  background: url("../images/cabecera3.jpg")no-repeat fixed center;
+  margin: 0 auto;
+  width: 99%;
+  height: 98%;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+#contenedory{ 
+    overflow: auto;
+    display: table-row;
+    vertical-align: middle;
+    padding:5px;
+    margin-left: 10px; /*para centrar*/ 
+    border: 2px solid blue;
+    border-radius: 20px;
+    width: 100%;
+    height: 590px;
+}
+
+#contenedorz{    
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+    height: 95%; //590px;
+    }
+table.ex1{
+    margin-top: 2cm; 
+    border-collapse: separate; 
+    border-spacing: 5px;
+}
+.separa{
+        padding-left: 2px;
+        border-left-style: solid;
+	border-left-color: #0F5CA9;
+	border-left-width: 2px;
+        padding-right: 20px;
+        text-align: left
+}
+.ex00 {
+color: #333333;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 40pt;
+}
+.ex0A {
+color: #fb0404;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 40pt;
+}
+.ex0B {
+color: #f0ff00;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 40pt;
+}
+.ex0C {
+color: #59c014;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 40pt;
+}
+.ex0D {
+color: #333333;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 20pt;
+}
+.ex0 {
+color: #333333;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 25pt;
+}
+.ex1 {
+  border-collapse: separate; 
+	border-spacing: 5px;
+}
+.ex2 {
+  background: url("../images/pimiento.png") no-repeat center;
+	background-size: 960px 700px; //80px
+}
+.formulario {
+	text-align: right;
+}
+.nuevoregistrotable2
+{
+    margin: 0 auto;
+    border-collapse: collapse;
+	  border: 0px solid black;
+    text-align: left;
+    font-size: 10pt;
+}
+.nuevoregistrotable2 th
+{
+/*    width: 5%;*/
+}
+.nuevoregistrotable2 thead
+{
+    font-weight: bold;
+}
+.fila_derG{
+  text-align: right;
+  font-size: 12pt;
+  font-style: bold;
+}
+.campoM {
+	background-color: #F7D358; /*fondo campo naranja*/
+	border: 2px solid #0087FF; /*borde azul*/
+	font-size: 12pt;
+	text-align: center;
+	color: #000000; /*color texto negro */ 
+	border-radius: 10px;
+}

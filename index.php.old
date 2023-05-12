@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Formulario de Acceso</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link type="text/css" rel="stylesheet" href="./estilo/bootstrap.min.css">
+    </link>
+    <link type="text/css" rel="stylesheet" href="./estilo/jquery.dataTables.min.css">
+    <link type="text/css" rel="stylesheet" href="./estilo/dataTables.bootstrap4.min.css">
+    <script src="./estilo/jquery-1.11.2.min.js"></script>
+    <script src="./estilo/jquery-ui.js"></script>
+    <script src="./estilo/jquery.dataTables.min.js"></script>
+    <script src="./estilo/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./estilo/form_login.css" media="screen" />
+</head>
+
+<body>
+    <section>
+        <?php
+	  if (isset($_POST['submit'])) {
+        // Recibimos datos de login del formulario
+        include './basededatos.php';
+        $bd = new basededatos;
+        $usuario=$_POST["usuario"];
+        $password=$_POST["password"];
+        if($filas=$bd->compruebaUsuario($usuario,$password))
+		 {
+            session_start();
+			$_SESSION['nombre'] = $filas['nombre'];
+			header("Location: ./app.php");
+		 }
+		
+	   } else{
+        if (isset($_GET['logout'])){
+            // Venimos del botón logout de la cabecera de la app
+            session_start();
+            unset($_SESSION['nombre']);
+        }
+	?> <div>
+            <center><br><br><b>Gestión de Redes</b><br><b>Dpto Informática</b></center>
+        </div>
+        <div>
+            <div class="abs-center">
+                <form action="#" method="POST">
+                    <img src="./img/logo.png" />
+
+                    <div class="form-group">
+                        <input type="text" name="usuario" class="form-control fondoamarillo" placeholder="Usuario">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control fondoamarillo" placeholder="Clave">
+                    </div>
+                    <button type="submit" name="submit" class="btn fondoverde">Entrar</button>
+                </form>
+            </div>
+        </div>
+        <?php } ?>
+    </section>
+</body>
+
+</html>
